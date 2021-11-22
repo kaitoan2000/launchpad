@@ -42,7 +42,7 @@ jobs:
         run: yarn install
 
       - name: Run upgrade
-        run: upgrade-interactive --latest
+        run: yarn upgrade-interactive --latest
       - name: Deploy to develop server 
         uses: appleboy/ssh-action@master
         with:
