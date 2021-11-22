@@ -6,7 +6,7 @@ on:
       - 'src/config/**'
   push:
     branches:
-      - develop
+      - master
 
 jobs:
   test:
@@ -43,6 +43,4 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Run tests
-        run: yarn test:config --watchAll=false
 
