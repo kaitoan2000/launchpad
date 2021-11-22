@@ -38,11 +38,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - name: Install dependencies
-        run: yarn install
-
-      - name: Run upgrade
-        run: yarn upgrade-interactive --latest
       - name: Deploy to develop server 
         uses: appleboy/ssh-action@master
         with:
